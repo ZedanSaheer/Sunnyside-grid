@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+:root {
+    --red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --green: hsl(167, 40%, 24%);
+    --phototext: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
+    --vvdb: hsl(212, 27%, 19%);
+    --vdgb: hsl(213, 9%, 39%);
+    --dgb: hsl(232, 10%, 55%);
+    --gb: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    height: 100px;
+    align-items: center;
+}
+
+#header {
+    flex: 3;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "barlow", sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+nav ul li a:hover {
+    font-family: "fraunces", sans-serif;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.300);
+    padding: 20px;
+    border-radius: 40px;
+}
+nav ul li a:active {
+    font-family: "fraunces", sans-serif;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+section.main {
+    min-height: 100vh;
+    width: 100%;
+    background: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.space {
+    height: 60px;
+}
+
+.main-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-family: "fraunces", sans-serif;
+    font-size: 4rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-content {
+    padding: 30px 150px;
+    height: 75vh;
+}
+
+.space-grid{
+    height: 30px;
+}
+
+.one,.four{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.one a,.four a{
+    width: 150px;
+    text-decoration: none;
+    font-family: "fraunces",sans-serif;
+    font-size: 1.5rem;
+    color: var(--vvdb);
+}
+
+.one a{
+   box-shadow: inset 0 -10px 0 rgba(255, 208, 0, 0.322);
+}
+
+.one a:hover{
+    box-shadow: inset 0 -10px 0 var(--yellow);
+}
+.four a{
+   box-shadow: inset 0 -10px 0 rgba(255, 72, 0, 0.322);
+}
+
+.four a:hover{
+    box-shadow: inset 0 -10px 0 var(--red);
+}
+
+.grid-content-title{
+    font-size: 3rem;
+    font-family: "fraunces",sans-serif;
+    color: var(--vvdb);
+}
+
+.five{
+    background:url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.six{
+    background:url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.six,.five{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.grid-content-title.last-row{
+    font-size: 2rem;
+
+}
+.grid-content-text.last-row{
+    font-size: 1rem;
+    color: var(--phototext);
+    padding: 0 40px;
+}
+
+.grid-content-text{
+   font-size: 1rem;
+   font-family: "barlow",sans-serif;
+   color: var(--gb);
+}
+
+.two{
+   background:url(images/desktop/image-transform.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.three{
+   background:url(images/desktop/image-stand-out.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.client-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+h2{
+    font-family: "fraunces",sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--gb);
+    margin: 30px;
+    letter-spacing: 10px;
+}
+
+.client-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientgrid-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.clientname{
+    font-family: "fraunces",sans-serif;
+    font-size: 1.5rem;
+}
+.client-position{
+    font-size: 1rem;
+    color: var(--gb);
+    font-family: "burlow",sans-serif;
+}
+
+#emily,#thomas,#jennie{
+    max-width: 100px;
+    min-width: 20px;
+    border-radius: 50%;
+}
+
+.clientgrid-content{
+    font-family: "burlow",sans-serif;
+    color: var(--vdgb);
+}
+
+.space-clientmore{
+    height: 30px;
+}
+
+.space-client{
+    height: 10px;
+}
+
+.client-container{
+    display: flex;
+}
+
+.photo-flex {
+    display: flex;
+    width: 100%;
+    
+}
+
+.photo-flex-box{
+    height: 500px;
+    width: 100%;
+}
+
+.photo-flex-box.one{
+    background: url(images/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo-flex-box.two{
+    background: url(images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo-flex-box.three{
+    background: url(images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo-flex-box.four{
+    background: url(images/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    color: var(--green);
+    background: #9BDBCE;
+}
+
+.footer-title{
+    font-family: "fraunces",sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerlink{
+    list-style: none;
+    margin: 10px 10px;
+}
+.footerlink a{
+    color: var(--green);
+    text-decoration: none;
+}
+
+.space-footer{
+    height: 10px;
+}
+.space-footer-logos{
+    height: 20px;
+}
+.social-logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerlink a:hover{
+    color: white;
+}
+
+svg:hover{
+    stroke: #9BDBCE;
+}
